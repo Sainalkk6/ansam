@@ -19,7 +19,7 @@ const Home = () => {
 						Yes
 					</button>
 				</Magnet>
-				<button>No</button>
+				<button onClick={()=> console.log('yayy')}>No</button>
 			</div>
 			{show && <Confetti width={width} height={height} />}
 		</div>
