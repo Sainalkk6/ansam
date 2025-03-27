@@ -15,7 +15,10 @@ const Home = () => {
 
 			<div className="flex items-center justify-center flex-col gap-2">
 				<Magnet padding={150} disabled={false} magnetStrength={1}>
-					<button onClick={() => setShow(true)} className="bg-black border px-4 py-3 w-3xl cursor-pointer">
+					<button onClick={() => {
+						setShow(true)
+						console.log("yayy Ansam")
+					}} className="bg-black border px-4 py-3 w-3xl cursor-pointer">
 						Yes
 					</button>
 				</Magnet>
