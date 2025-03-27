@@ -1,13 +1,11 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Magnet from './components/MagneticButton';
 import { useWindowSize } from 'react-use';
-import VariableProximity from './components/ProximityText';
 import Confetti from 'react-confetti';
 
 const Home = () => {
 	const [show, setShow] = useState(false);
-	const containerRef = useRef(null);
 	const { width, height } = useWindowSize();
 	return (
 		<div className="flex w-full flex-col h-screen items-center p-5 gap-[300px]">
